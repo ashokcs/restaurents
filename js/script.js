@@ -41,7 +41,7 @@ const findPizzaRestauents = async () => {
 
   const submitRest = async () => {
       var name = document.getElementById("restaurent").value;
-    const response = await fetch('https://private-4bb79-ashokchakravarthinagarajan.apiary-mock.com/restaurents', {
+    const response = await fetch('http://127.0.0.1:8080/', {
         method: 'POST',
         mode: 'no-cors',
         cache: 'no-cache',
