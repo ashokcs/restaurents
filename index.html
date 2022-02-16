@@ -3,17 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>Restaurents</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/script.js"></script>
   </head>
   <body>
-    <h1>Find Restaurents nearby Toronto</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
-    <ul> 
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-    <button onclick="userAction()">Find</button>
+    <main>
+        <div id="header">
+            <h1 class="header_content">Find Restaurents Nearby Toronto</h1>
+        </div>
+
+        <div class="flex-container">
+            <div class="card">
+                <img src="./images/pizza.jpeg" alt="Pizza" height="300px" width="300px" onclick="findPizzaRestauents()">
+            </div>
+    
+            <div class="card">
+                <img src="./images/chicken.jpeg" alt="Chicken" style="width:100%" onclick="findChickenRestauents()">
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <h2 id="pizza">Pizza</h2>
+            <h2 id="chicken">Chicken</h2>
+        </div>
+
+        <div id='myModal' class='modal'>
+            <span class="close">
+                <div class='modal-content'>
+                    <img class="modal_image" id="modal_image1" src="" height="100px" width="100px"/>
+                    <h2 id="textcontent1"></p>
+                </div>
+                <div class='modal-content'>
+                    <img class="modal_image" id="modal_image2" src="" height="100px" width="100px"/>
+                    <h2 id="textcontent2"></h2>
+                </div>
+                <div class='modal-content'>
+                    <img class="modal_image" id="modal_image3" src="" height="100px" width="100px"/>
+                    <h2 id="textcontent3"></p>
+                </div>
+            </span>
+        </div>
+
+        <div id="add_restaurent" >
+            <h2 class="reg">Register your Restaurent!!</h2>
+            <div>
+                <label for="restaurent">Restaurent Name:</label><br>
+                <input type="text" id="restaurent" style="width:250px" name="restaurent"/><br>
+                
+                <input type="checkbox" id="dinner" name="dinner" value="Dinner">
+                <label for="dinner"> Opens for Dinner</label><br>
+
+                <input type="checkbox" id="lunch" name="lunch" value="Lunch">
+                <label for="lunch"> Opens for Lunch</label><br>
+
+                <input type="checkbox" id="brunch" name="brunch" value="Brunch">
+                <label for="brunch"> Opens for Brunch</label><br>
+
+                <label for="address">Address:</label><br>
+                <textarea type="text" id="address" name="address" rows=5 cols=30></textarea><br><br>
+
+                <button onclick="submitRest()">Submit</button>
+            </div> 
+        </div>
+       
+
+        <footer> <p class="footer_content">&copy; 2022 All rights reserverd. </p></footer>
+    </main>
+    
   </body>
 </html>
