@@ -11,5 +11,16 @@ To Add your restaurent in the lise.
   Fill up the form. It will call an POST method api.
 
 To run this application:
+```bash
 npm install express
 node app.js
+```
+
+## Home Page:
+![ds](https://github.com/ashokcs/restaurents/blob/master/screenshots/1.png)
+
+## API response popup:
+![ds](https://github.com/ashokcs/restaurents/blob/master/screenshots/2.png)
+
+## POST request result:
+![ds](https://github.com/ashokcs/restaurents/blob/master/screenshots/3.png)
