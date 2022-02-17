@@ -125,11 +125,16 @@ button:hover {
   }
 
 footer{
-    background-color: #5152a0;
+    background-color: #5170a0;
     height: 50px;
     text-align: center;
-    position:absolute;
+    position:fixed;
     bottom:0;
-    width:47%;
+    width:100%;
+    max-width: 900px;
     color: white;
+}
+
+.details{
+    padding: 0px 20px;
 }

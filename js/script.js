@@ -17,11 +17,7 @@ const findPizzaRestauents = async () => {
      modal.style.display = "none";
     }
 
-  window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+
   }
 
   const findChickenRestauents = async () => {
@@ -36,6 +32,11 @@ const findPizzaRestauents = async () => {
         modal.style.display = "block";
         document.getElementById("modal_image"+ (i+1)).src = "./images/chicken_" + (i+1) +".jpeg";
         document.getElementById("textcontent"+ (i+1)).innerHTML = restaurentName;
+    }
+
+    var span = document.querySelector(".close");
+    span.onclick = function() {
+     modal.style.display = "none";
     }
   }
 

@@ -9,3 +9,7 @@ depends on the selction it will show the restaurents list in the pop-up as a res
 
 To Add your restaurent in the lise.
   Fill up the form. It will call an POST method api.
+
+To run this application:
+npm install express
+node app.js
